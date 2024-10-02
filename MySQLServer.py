@@ -10,7 +10,7 @@ def create_database():
         )
         cursor = cnx.cursor()
 
-        create_db_query = "CREATE DATABASE alx_book_store"
+        create_db_query = "CREATE DATABASE IF NOT EXISTS alx_book_store"
 
         try:
             cursor.execute(create_db_query)
